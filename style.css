@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&family=Raleway:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: "open sans";
+}
+h1,h2,h5,a,button {
+    font-family: raleway;
+}
+main {
+    padding:0 5rem;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height:auto;
+    padding: 15px 0;
+}
+.logo {
+    width: 150px;
+    display: block;
+}
+.logo img, .logo svg{
+    width: 100%;
+}
+.nav_links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    list-style-position: inside;
+
+}
+.link {
+    padding: 0 25px;
+}
+.link a{
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero {
+    display: flex;
+    padding: 5rem 0;
+
+}
+.hero > div {
+    width: 50%;
+
+}
+.hero_img {
+    display: flex;
+    justify-content: flex-end;
+}
+.hero_img img{
+    width: 80%;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.intro h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    color: hsl(243, 87%, 12%);
+}
+.intro p {
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 15px;
+}
+.intro form {
+    display: flex;
+    gap: 25px;
+}
+.intro form input {
+    border: 1px solid hsl(238, 22%, 44%);
+    padding: 10px 50px 10px 20px;
+    border-radius: 3px;
+}
+.intro form input::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+.intro form button {
+    padding: 10px 30px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.info {
+    padding: 5rem 5rem;
+    display: flex;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.info >div {
+    width: 50%;}
+.info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: hsl(243, 87%, 12%);
+}
+.info p {
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 15px;
+}
+.info a {
+    color: hsl(170, 45%, 43%);
+    margin-bottom: 25px;
+
+}
+.info .card {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px 0px hsl(0, 0%, 75%);
+    margin: 20px 0;
+}
+.info .card p {
+    font-size: 12px;
+    
+}
+.info .card .profile {
+    display: flex;
+}
+.info .card .profile .avtar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.info_image {
+    display: flex;
+    justify-content: flex-end;
+}
+.info_image img {
+    width: 80%;
+}
+.get_early_access {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: hsl(238, 22%, 44%);
+}
+.get_early_access h2 {
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+}
+.get_early_access p {
+    width: 70%;
+    font-size: 14px;
+}
+.get_early_access > div {
+    width: 50%;
+}
+.get_early_access input {
+    padding: 10px 20px;
+    width: 70%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px hsl(0, 0%, 75%);
+    margin-bottom: 15px;
+    display: block;
+}
+.get_early_access button {
+    padding: 10px 30px;
+    flex-shrink: 0;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+footer {
+    padding: 5rem;
+    background-color: hsl(243, 87%, 12%);
+}
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 30px;
+}
+.footer_nav div {
+    flex-shrink: 1;
+    flex-basis: 1;
+}
+.footer_nav a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+@media (max-width:780px) {
+    body {
+        font-size: 16px;
+    }
+    main {
+        padding: 1rem;
+    }
+    .link {
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero > div {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .intro form {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .intro form > * {
+        display: block;
+        width: 100%;
+    }
+    .info {
+        flex-direction: column-reverse;
+        padding:3rem 1rem;
+    }
+    .info > div {
+        width: 100%;
+        text-align: center;
+    }
+    .info_image {
+        justify-content: center;
+    }
+    .info .card {
+        margin: 20px auto;
+        text-align: left;
+        
+    }
+    .get_early_access {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        align-items: center;
+    }
+    .get_early_access h2 {
+        font-size: 1.5rem;
+    }
+    .get_early_access p {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .get_early_access input ,.get_early_access button  {
+        width: 100%;
+    }
+    .get_early_access > div {
+        width: 100%;
+        text-align: center;
+    }
+    .footer_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_nav > div {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
